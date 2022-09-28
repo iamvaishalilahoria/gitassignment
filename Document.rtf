@@ -1,0 +1,264 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs24\lang9                                                    ASSIGNMENT --2\par
+                                              BY--VAISHALI LAHORIA\par
+\b0 Q 1 Write a program to find sum of all integers greater than 100 and less than 200 that are divisible by 7.\par
+\f1\fs20 package Day2;\par
+public class Integer \{\par
+\f2\lang1033     \f1\lang9 public static void main(String[] args) \f2\lang1033\{\f1\lang9\par
+\tab\tab int x,sum=0;\par
+\tab\tab for (x=101; x<200; x++)\par
+\tab\tab\{\par
+\f2\lang1033                     \f1\lang9 if(x%7==0)\par
+\tab\tab\tab\{\par
+\tab\tab\tab\tab sum = sum+x;\tab\par
+\tab\tab\tab\}\par
+\tab\tab\}\par
+            System.\b\i out\b0\i0 .println(sum);\par
+\tab\}\par
+\}\par
+\f2\lang1033 OUTPUT--> \f1 2107\par
+\par
+\f2\fs22 Q\f1 2 Write a program in java that ask three numbers from\f2  \f1 user and print the greatest among three\f2 .\par
+\f1\fs20 package Day2;\par
+import java.util.Scanner;\par
+public class Greaternum \{\par
+\f2   \f1 public static void main(String[] args) \{\par
+\f2              \f1 int n1, n2,n3;\par
+\tab\tab Scanner \ul s\ulnone =new Scanner(System.\b\i in\b0\i0 );\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the value of n1");\par
+\tab\tab n1=s.nextInt();\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the value of n2");\par
+\tab\tab n2=s.nextInt();\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the value of n3");\par
+\tab\tab n3=s.nextInt();\par
+\tab\tab if (n1>n2 && n1>n3)\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("n1 is greater");\par
+\tab\tab else if (n2>n1 && n2>n3)\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("n2 is greater");\par
+\tab\tab else\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("n3 is greater");\par
+\tab\}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 Enter the value of n1\par
+\f2            \f1 52\par
+\f2            \f1 Enter the value of n2\par
+\f2            \f1 60\par
+\f2            \f1 Enter the value of n3\par
+\f2            \f1 72\par
+\f2            \f1 n3 is greater\par
+\par
+\b\f2\fs22 Q \f1 3. WAP to find  ASCII value of a character\f2 .\par
+\b0\f1\fs20 package Day2;\par
+public class Ascii \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab char ch='m';\par
+\tab\tab System.\b\i out\b0\i0 .println((int)ch);\par
+\tab\}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 109\b\f2\fs22\par
+\b0\f1\fs20\par
+\b\f2\fs22 Q\f1 4. Java Program to Check Whether an Alphabet is Vowel or Consonant\f2 .\par
+\b0\f1\fs20 package Day2;\par
+public class Alphabet \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab char ch='u';\par
+\tab\tab if (ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'||ch=='u')\par
+\tab\tab\tab System.\b\i out\b0\i0 .println(ch + "is vowel");\par
+\tab\tab else\par
+\tab\tab\tab System.\b\i out\b0\i0 .println(ch + "is consonant");\par
+\tab\}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 uis vowel\par
+\par
+\b\f2\fs22 Q5 Check if a Number is Positive or Negative using if else.\par
+\b0\f1\fs20\lang9 package Day2;\par
+public class Positive \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab int n=-3;\par
+\tab\tab if (n>0)\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("The number is Positive");\par
+\tab\tab else\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("The number is Negative");\par
+\tab\}\par
+\}\fs22\par
+\f2\lang1033    OUTPUT--> \f1\fs20\lang9 The number is Negative\par
+\par
+\b\f2\fs22\lang1033 Q\f1\lang9 6 WAP for swapping two numbers without using third variable\f2\lang1033 .\par
+\b0\f1\fs20 package Day2;\par
+import java.util.Scanner;\par
+public class Swapping \{\par
+\par
+\tab public static void main(String[] args) \{\par
+     int n1, n2;\par
+     Scanner \ul s\ulnone =new Scanner(System.\b\i in\b0\i0 );\par
+     System.\b\i out\b0\i0 .println("Enter the value of n1");\par
+     n1=s.nextInt();\par
+     System.\b\i out\b0\i0 .println("Enter the value of n2");\par
+     n2=s.nextInt();\par
+     System.\b\i out\b0\i0 .println("Numbers before swapping" +n1+" "+n2);\par
+     n1= n1+n2; \par
+     n2= n1-n2;\par
+     n1= n1-n2;\par
+     System.\b\i out\b0\i0 .println("Numbers after swapping" +n1+" "+n2);\par
+     \}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 Enter the value of n1\par
+\f2            \f1 25\par
+\f2            \f1 Enter the value of n2\par
+\f2            \f1 50\par
+\f2            \f1 Numbers before swapping25 50\par
+\f2            \f1 Numbers after swapping50 25\par
+\b\par
+\f2\fs22 Q\f1 7 Write a program that would print the information (name,\f2  \f1 year of joining, salary, address) of three employees by creating a class named\f2  \f1 'Employee'. The output should be as follows:\par
+Name           Year of joining        Address\par
+Ashish          1994                64C- WallsStre\f2 e\f1 t\par
+Sam             2000                68D- WallsStre\f2 e\f1 t\par
+John            1999                26B- WallsStre\f2 e\f1 t \par
+\b0\fs20 package Day2;\par
+public class Employee \{\par
+\tab public static void main(String[] args) \{\par
+\tab System.\b\i out\b0\i0 .println("Name       Year of joining        Address");\par
+\tab System.\b\i out\b0\i0 .println("Ashish        1994           64C- WallsStreet");\par
+\tab System.\b\i out\b0\i0 .println("Sam           2000           68D- WallsStreet");\par
+\tab System.\b\i out\b0\i0 .println("John          1999           26B- WallsStreet");\par
+\tab\tab\}\par
+\}\f2  \par
+\fs22 OUTPUT--> \f1\fs20 Name       Year of joining        Address\par
+\f2            \f1 Ashish        1994           64C- WallsStreet\par
+\f2            \f1 Sam           2000           68D- WallsStreet\par
+\f2            \f1 John          1999           26B- WallsStreet\par
+\par
+\b\f2\fs22 Q\f1 8 WAP to input basic salary of an employee and calculate its\par
+\f2    \f1 Gross salary according to following:\par
+\f2    \f1 Basic Salary <= 10000 : HRA = 20%, DA = 80%\par
+\f2    \f1 Basic Salary <= 20000 : HRA = 25%, DA = 90%\par
+\f2    \f1 Basic Salary > 20000 : HRA = 30%, DA = 95%\par
+\b0\fs20 package Day2;\par
+import java.util.Scanner;\par
+public class GrossSalary \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab float basic, gross, hra, da, \ul da1\ulnone , \ul hra1\ulnone ;\par
+\tab\tab Scanner \ul in\ulnone =new Scanner(System.\b\i in\b0\i0 );\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the basic salary of an employee");\par
+\tab\tab basic=in.nextFloat();\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the basic HRA of employee");\par
+\tab\tab hra1=in.nextFloat();\par
+\tab\tab System.\b\i out\b0\i0 .println("Enter the basic DA of employee");\par
+\tab\tab da1=in.nextFloat();\par
+\tab\tab if (basic<= 10000)\par
+\tab\tab\{\par
+\tab\tab\tab hra = 0.2f * basic;\par
+\tab\tab\tab da = 0.8f * basic;\par
+\tab\tab\tab gross = basic+da+hra;\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("Gross Salary"+gross);\par
+\tab\tab\}\par
+\tab\tab else if (basic<= 20000)\par
+\tab\tab\{\par
+\tab\tab\tab hra = 0.25f * basic;\par
+\tab\tab\tab da = 0.90f * basic;\par
+\tab\tab\tab gross = basic+da+hra;\par
+\tab\tab\tab System.\b\i out\b0\i0 .println("Gross Salary"+gross);\par
+\tab\tab\}\par
+\tab\tab else\par
+\tab\tab\{\par
+\tab\tab     hra = 0.30f * basic;\par
+\tab\tab     da = 0.95f* basic;\par
+\tab\tab     gross = basic+da+hra;\par
+\tab\tab     System.\b\i out\b0\i0 .println("Gross Salary"+gross);\par
+\tab\tab\}\tab\tab\par
+\f2          \f1\}\par
+\tab\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 Enter the basic salary of an employee\par
+\f2            \f1 50000\par
+\f2            \f1 Enter the basic HRA of employee\par
+\f2            \f1 4500\par
+\f2            \f1 Enter the basic DA of employee\par
+\f2            \f1 2000\par
+\f2            \f1 Gross Salary112500.0\par
+\par
+\b\fs22 Q8 wap to print even numbers between 10 to 20\f2 .\par
+\b0\f1\fs20 package Day2;\par
+public class Even \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab int n=20;\par
+\tab\tab System.\b\i out\b0\i0 .println("The even numbers between 10 to" +n+ ":");\par
+\tab\tab for(int i=11; i<n; i++)\par
+\tab\tab\{\par
+\tab\tab\tab if (i%2==0)\par
+\tab\tab\tab\{\par
+          System.\b\i out\b0\i0 .println(i +" ");\par
+\tab\tab\tab\}\par
+\tab\tab\}\par
+\tab\}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 The even numbers between 10 to20:\par
+\f2             \f1 12 \par
+\f2             \f1 14 \par
+\f2             \f1 16 \par
+\f2             \f1 18 \par
+\par
+\b\f2\fs22 Q\f1  9 wap to check if a number is prime or not\f2 .\par
+\b0\f1\fs20 package Day2;\par
+public class Prime \par
+\{\par
+\tab public static void main(String[] args)\par
+\tab\{\par
+\tab\tab int num=39;\par
+\tab\tab boolean flag=false;\par
+\tab\tab for (int i=2; i<=num/2; i++)\par
+\tab\tab\{\par
+\tab\tab if (num % i==0)\par
+\tab\tab\{\par
+\tab\tab\f2     \f1 flag = true;\par
+\tab\tab     break;\par
+\tab\tab\}\par
+\tab\}\par
+\tab\tab if (!flag)\par
+\tab\tab\tab System.\b\i out\b0\i0 .println(num + "is a prime number");\par
+\tab\tab\tab else\par
+\tab\tab\tab\tab System.\b\i out\b0\i0 .println(num + "is a not prime number");\par
+\tab\}\par
+\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 39is a not prime number\par
+\par
+\b\fs22 Q 10 wap to reverse a given digit   123   321\par
+\b0\fs20 package Day2;\par
+import java.util.Scanner;\par
+public class Reverse\par
+ \{\par
+\f2     \f1 public static void main(String[] args)\par
+\tab\{\par
+\tab\tab int n, reverse=0, remainder;\par
+\tab       Scanner \ul s\ulnone =new Scanner(System.\b\i in\b0\i0 );\par
+\tab\f2       \f1 System.\b\i out\b0\i0 .println("Enter a digit you want to reverse");\par
+\tab\tab n=s.nextInt();\par
+\tab\tab while (n!=0)\par
+\tab\tab\f2  \f1\{\par
+\tab\tab\tab remainder = n % 10;\par
+\tab\tab\tab reverse = reverse * 10 + remainder;\par
+\tab\tab\f2        \f1 n/=10;\par
+\tab\tab\}\par
+\tab\tab\f2    \f1 while (n!=0)\par
+\tab\tab\tab\{\par
+\tab\tab\tab\tab remainder = n % 10;\par
+\tab\tab\tab\tab reverse = reverse * 10 + remainder;\par
+\tab\tab\tab\tab n/=10;\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab System.\b\i out\b0\i0 .println("Reversed digit is:"+reverse);\par
+\tab\}\par
+\}\par
+\f2\fs22 OUTPUT--> \f1\fs20 Enter a digit you want to reverse\par
+\f2            \f1 123\par
+\f2            \f1 Reversed digit is:321\par
+\b\fs22\par
+\b0\fs20\par
+\par
+\b\par
+\b0\par
+\par
+\b\f2\fs22\lang9\par
+\b0\f0\fs24\par
+}
+ 
